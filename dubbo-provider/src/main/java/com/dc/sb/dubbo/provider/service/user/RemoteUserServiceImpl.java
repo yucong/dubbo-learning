@@ -21,7 +21,7 @@ public class RemoteUserServiceImpl implements RemoteUserService {
 
     @Override
     public String sayHello(String name) {
-
+    	logger.info("say Hello :" + name);
         return "Hello "+name;
     }
 }
