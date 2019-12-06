@@ -1,4 +1,4 @@
-package com.dc.sb.web.controller.remote;
+package com.dc.sb.web.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;

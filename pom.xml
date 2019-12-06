@@ -46,7 +46,6 @@
 	</properties>
 	<!-- 多模块-->
 	<modules>
-		<module>dubbo-service</module>
 		<module>dubbo-web</module>
 		<module>dubbo-dao</module>
 		<module>dubbo-common</module>

@@ -24,6 +24,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     private Map<String,Object> handerException(Exception e){
 
+    	logger.error("服务出错:" + e.getMessage());
 
         Map<String,Object> result=new HashMap<String,Object>();
         result.put("code",500);
