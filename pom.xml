@@ -44,16 +44,13 @@
 		<dubbo.starter.version>2.0.0</dubbo.starter.version>
 		<zkclient.version>0.10</zkclient.version>
 	</properties>
+	
 	<!-- 多模块-->
 	<modules>
 		<module>dubbo-web</module>
-		<module>dubbo-dao</module>
-		<module>dubbo-common</module>
 		<module>dubbo-provider</module>
 		<module>dubbo-interface</module>
 	</modules>
-
-	
 
 	<dependencyManagement>
 		<dependencies>
@@ -61,18 +58,6 @@
 				<groupId>com.yucong</groupId>
 				<artifactId>dubbo-service</artifactId>
 				<version>${sb-service.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.yucong</groupId>
-				<artifactId>dubbo-dao</artifactId>
-				<version>${sb-dao.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.yucong</groupId>
-				<artifactId>dubbo-common</artifactId>
-				<version>${sb-common.version}</version>
 			</dependency>
 
 			<dependency>
@@ -85,48 +70,6 @@
 				<groupId>com.yucong</groupId>
 				<artifactId>dubbo-interface</artifactId>
 				<version>${sb-dubbo-interface.version}</version>
-			</dependency>
-			<!--data-redis-->
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-data-redis</artifactId>
-				<version>${data-redis.version}</version>
-			</dependency>
-			<!--mybatis-->
-			<dependency>
-				<groupId>org.mybatis.generator</groupId>
-				<artifactId>mybatis-generator-core</artifactId>
-				<version>${mybatis.generator.version}</version>
-			</dependency>
-
-			<dependency>
-			    <groupId>org.mybatis.spring.boot</groupId>
-			    <artifactId>mybatis-spring-boot-starter</artifactId>
-			    <version>${mybatis-starter.version}</version>
-			</dependency>
-			<!--pagehelper-->
-			<dependency>
-			    <groupId>com.github.pagehelper</groupId>
-			    <artifactId>pagehelper</artifactId>
-			    <version>${pagehelper.version}</version>
-			</dependency>
-
-            <dependency>
-                <groupId>com.github.pagehelper</groupId>
-                <artifactId>pagehelper-spring-boot-starter</artifactId>
-                <version>${pagehelper-starter.version}</version>
-            </dependency>
-			<!--druid-->
-			<dependency>
-			    <groupId>com.alibaba</groupId>
-			    <artifactId>druid</artifactId>
-			    <version>${druid.version}</version>
-			</dependency>
-
-			<dependency>
-			    <groupId>mysql</groupId>
-			    <artifactId>mysql-connector-java</artifactId>
-			    <version>${mysql.version}</version>
 			</dependency>
 
 			<dependency>

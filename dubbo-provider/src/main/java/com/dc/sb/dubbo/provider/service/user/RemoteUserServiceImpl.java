@@ -18,7 +18,6 @@ public class RemoteUserServiceImpl implements RemoteUserService {
 
     private static final Logger logger = LoggerFactory.getLogger(RemoteUserServiceImpl.class);
 
-
     @Override
     public String sayHello(String name) {
     	logger.info("say Hello :" + name);
