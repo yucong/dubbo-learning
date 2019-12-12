@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
+ * 官方介绍文档
  * 
  * https://github.com/alibaba/dubbo-spring-boot-starter/blob/master/README_zh.md
- * 
  * 
  */
 @Component
