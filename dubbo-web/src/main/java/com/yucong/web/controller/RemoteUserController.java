@@ -1,4 +1,4 @@
-package com.dc.sb.web.controller;
+package com.yucong.web.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RemoteUserController {
 
     //timeout 可以不指定，但是version一定要指定 不然会找不到服务 直连需要加url="dubbo://localhost:20880"
-    @Reference(version = "1.1.0",check = false)
+    @Reference(/*version = "1.1.0",*/check = false)
     private RemoteUserService remoteUserService;
 
 

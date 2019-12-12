@@ -1,4 +1,4 @@
-package com.dc.sb.web.interceptor;
+package com.yucong.web.interceptor;
 
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;

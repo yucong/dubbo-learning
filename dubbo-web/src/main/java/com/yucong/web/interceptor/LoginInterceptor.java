@@ -1,4 +1,4 @@
-package com.dc.sb.web.interceptor;
+package com.yucong.web.interceptor;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
