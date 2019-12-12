@@ -23,7 +23,6 @@
 		<sb-service.version>0.0.1-SNAPSHOT</sb-service.version>
 		<sb-dao.version>0.0.1-SNAPSHOT</sb-dao.version>
 		<sb-common.version>0.0.1-SNAPSHOT</sb-common.version>
-		<sb-dubbo-provider.version>0.0.1-SNAPSHOT</sb-dubbo-provider.version>
 		<sb-dubbo-interface.version>0.0.1-SNAPSHOT</sb-dubbo-interface.version>
 		<servlet.version>3.1.0</servlet.version>
 		<httpclient.version>4.5.2</httpclient.version>
@@ -45,12 +44,6 @@
 				<groupId>com.yucong</groupId>
 				<artifactId>dubbo-service</artifactId>
 				<version>${sb-service.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.yucong</groupId>
-				<artifactId>dubbo-provider</artifactId>
-				<version>${sb-dubbo-provider.version}</version>
 			</dependency>
 
 			<dependency>
@@ -88,6 +81,7 @@
 				<artifactId>zkclient</artifactId>
 				<version>${zkclient.version}</version>
 			</dependency>
+			
 		</dependencies>
 	</dependencyManagement>
 

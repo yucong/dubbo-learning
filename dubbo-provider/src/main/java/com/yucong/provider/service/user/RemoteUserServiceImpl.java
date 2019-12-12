@@ -8,11 +8,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
- * dubbo 服务service
- *
- * @author DUCHONG
- * @since 2018-07-03 18:29
- **/
+ * 
+ * https://github.com/alibaba/dubbo-spring-boot-starter/blob/master/README_zh.md
+ * 
+ * 
+ */
 @Component
 @Service(/*version = "1.0.0",*/timeout = 10000,interfaceClass = RemoteUserService.class)
 public class RemoteUserServiceImpl implements RemoteUserService {
