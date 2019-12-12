@@ -1,4 +1,4 @@
-package com.dc.sb.service;
+package com.yucong.service;
 
 public interface RemoteUserService {
 

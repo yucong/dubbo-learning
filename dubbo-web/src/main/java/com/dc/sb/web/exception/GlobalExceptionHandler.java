@@ -23,13 +23,10 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     private Map<String,Object> handerException(Exception e){
-
-    	logger.error("服务出错:" + e.getMessage());
-
+    	logger.error("服务器出错",e);
         Map<String,Object> result=new HashMap<String,Object>();
         result.put("code",500);
         result.put("msg",e.toString());
-
         return result;
     }
 }
