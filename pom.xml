@@ -34,24 +34,17 @@
 	<!-- 多模块-->
 	<modules>
 		<module>dubbo-web</module>
-		<module>dubbo-provider</module>
-		<module>dubbo-interface</module>
+		<module>dubbo-service-A</module>
+		<module>dubbo-service-B</module>
+		<module>dubbo-service-C</module>
+		<module>dubbo-interface-A</module>
+		<module>dubbo-interface-B</module>
+		<module>dubbo-interface-C</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>com.yucong</groupId>
-				<artifactId>dubbo-service</artifactId>
-				<version>${sb-service.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.yucong</groupId>
-				<artifactId>dubbo-interface</artifactId>
-				<version>${sb-dubbo-interface.version}</version>
-			</dependency>
-
+		
 			<dependency>
 			    <groupId>javax.servlet</groupId>
 			    <artifactId>javax.servlet-api</artifactId>

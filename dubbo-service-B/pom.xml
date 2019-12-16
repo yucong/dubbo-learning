@@ -2,31 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
-		<groupId>com.yucong</groupId>
-		<artifactId>dubbo-learning</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<artifactId>dubbo-web</artifactId>
+        <groupId>com.yucong</groupId>
+        <artifactId>dubbo-learning</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+	<artifactId>dubbo-service-B</artifactId>
 	<packaging>jar</packaging>
 
-	<name>dubbo-web</name>
-	<description>dubbo-web  project for Spring Boot</description>
-
+	<name>dubbo-service-B</name>
+	<description>dubbo provider  project for Spring Boot</description>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		
+	
 		<dependency>
 			<groupId>com.alibaba.spring.boot</groupId>
 			<artifactId>dubbo-spring-boot-starter</artifactId>
@@ -48,22 +36,22 @@
             </exclusions>
         </dependency>
         
-        <dependency>
+
+		<dependency>
 			<groupId>com.101tec</groupId>
 			<artifactId>zkclient</artifactId>
 		</dependency>
-		
 
-		<!--web 项目作为dubbo的消费端-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>com.yucong</groupId>
-			<artifactId>dubbo-interface-A</artifactId>
+			<artifactId>dubbo-interface-B</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		
-		
-
-		
 		
 	</dependencies>
 
