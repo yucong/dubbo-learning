@@ -21,7 +21,7 @@ public class ThreeServiceImpl implements ThreeService {
 
     @Override
     public String three(String name) {
-    	logger.info("say Hello :" + name);
-        return "Hello "+name;
+    	logger.info("say Hello three:" + name);
+        return "Three Hello "+name;
     }
 }

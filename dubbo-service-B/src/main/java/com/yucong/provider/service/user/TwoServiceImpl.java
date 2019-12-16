@@ -1,6 +1,8 @@
 package com.yucong.provider.service.user;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
+import com.yucong.service.ThreeService;
 import com.yucong.service.TwoService;
 
 import org.slf4j.Logger;
@@ -19,9 +21,12 @@ public class TwoServiceImpl implements TwoService {
 
     private static final Logger logger = LoggerFactory.getLogger(TwoServiceImpl.class);
 
+    @Reference(/*version = "1.1.0",*/check = false /*,url="dubbo://localhost:20880"*/)
+    private ThreeService threeService;
+    
     @Override
     public String two(String name) {
-    	logger.info("say Hello :" + name);
-        return ",two service "+name;
+    	logger.info("say Hello two:" + name);
+        return threeService.three(name);
     }
 }

@@ -1,7 +1,9 @@
 package com.yucong.service.service.user;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.yucong.service.OneService;
+import com.yucong.service.TwoService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,10 +21,13 @@ public class OneServiceImpl implements OneService {
 
     private static final Logger logger = LoggerFactory.getLogger(OneService.class);
 
+    @Reference(/*version = "1.1.0",*/check = false /*,url="dubbo://localhost:20880"*/)
+    private TwoService twoService;
+    
     @Override
     public String one(String name) {
     	logger.info("service one :" + name);
-        return "service one " + name;
+        return twoService.two(name);
     }
     
 }
