@@ -25,7 +25,7 @@
 		<sb-common.version>0.0.1-SNAPSHOT</sb-common.version>
 		<sb-dubbo-interface.version>0.0.1-SNAPSHOT</sb-dubbo-interface.version>
 		<servlet.version>3.1.0</servlet.version>
-		<httpclient.version>4.5.2</httpclient.version>
+		<httpclient.version>4.5.13</httpclient.version>
 		<httpcore.version>4.4</httpcore.version>
 		<dubbo.starter.version>2.0.0</dubbo.starter.version>
 		<zkclient.version>0.4</zkclient.version>
